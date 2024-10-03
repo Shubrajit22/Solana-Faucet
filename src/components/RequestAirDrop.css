@@ -1,0 +1,17 @@
+#button {
+    background-color: rgb(92, 30, 207);
+    color: white;
+    padding: 10px 20px;
+    margin:12px;
+    border: none;
+    cursor: pointer;
+  }
+  #amount{
+    width:50%;
+    height:50px;
+    border-radius: 5px;
+    border:2px solid purple;
+    font-size: large;
+    padding:2px;
+    
+  }
