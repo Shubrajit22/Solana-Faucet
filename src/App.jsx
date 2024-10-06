@@ -14,6 +14,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import RequestAirDrop from "./components/RequestAirDrop";
 import ShowBalance from "./components/ShowBalance";
 import "./App.css";
+import SendTokens from "./components/SendTokens";
 function App() {
   return (
     <div id="main">
@@ -65,6 +66,17 @@ function App() {
               }}
             >
               <ShowBalance />
+            </div>
+            <div
+              style={{
+                width: "100vw",
+                display: "flex",
+                justifyContent: "center",
+                gap: "15px",
+                alignItems: "center",
+              }}
+            >
+              <SendTokens />
             </div>
           </WalletModalProvider>
         </WalletProvider>
