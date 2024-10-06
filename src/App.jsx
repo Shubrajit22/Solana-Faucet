@@ -12,10 +12,11 @@ import { clusterApiUrl } from "@solana/web3.js";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 import RequestAirDrop from "./components/RequestAirDrop";
-
+import ShowBalance from "./components/ShowBalance";
+import "./App.css";
 function App() {
   return (
-    <div>
+    <div id="main">
       <div
         style={{
           width: "100vw",
@@ -36,7 +37,7 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 gap: "15px",
-                alignItems: "column",
+                alignItems: "center",
               }}
             >
               <WalletMultiButton />
@@ -47,11 +48,23 @@ function App() {
                 width: "100vw",
                 display: "flex",
                 justifyContent: "center",
+
                 gap: "15px",
                 alignItems: "center",
               }}
             >
               <RequestAirDrop />
+            </div>
+            <div
+              style={{
+                width: "100vw",
+                display: "flex",
+                justifyContent: "center",
+                gap: "15px",
+                alignItems: "center",
+              }}
+            >
+              <ShowBalance />
             </div>
           </WalletModalProvider>
         </WalletProvider>

@@ -1,3 +1,10 @@
+#air_drop {
+  display: flex;
+  flex-direction:column;
+  margin:5px;
+}
+
+
 #button {
     background-color: rgb(92, 30, 207);
     color: white;
@@ -7,11 +14,45 @@
     cursor: pointer;
   }
   #amount{
-    width:50%;
+    margin-top:10px;
+    width:100%;
     height:50px;
     border-radius: 5px;
     border:2px solid purple;
     font-size: large;
     padding:2px;
     
+    
   }
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Show balance container */
+#show_balance {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #0a0a0a;
+  border-radius: 5px;
+  background-color: #242424;
+}
+
+/* Show balance button */
+#bal {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:  rgb(92, 30, 207);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Show balance div */
+#show {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
